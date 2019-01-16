@@ -18,10 +18,6 @@ module statemachine(input slow_clock, input resetb,
                     output load_dcard1, output load_dcard2, output load_dcard3,
                     output player_win_light, output dealer_win_light);
 
-// The code describing your state machine will go here.  Remember that
-// a state machine consists of next state logic, output logic, and the 
-// registers that hold the state.  You will want to review your notes from
-// CPEN 211 or equivalent if you have forgotten how to write a state machine.
 
 	reg rload_pcard1, rload_pcard2, rload_pcard3, rload_dcard1, rload_dcard2, rload_dcard3, rplayer_win_light, rdealer_win_light;
 	reg [3:0] present_state, next_state;

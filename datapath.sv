@@ -6,12 +6,7 @@ module datapath(input slow_clock, input fast_clock, input resetb,
                 output[6:0] HEX5, output[6:0] HEX4, output[6:0] HEX3,
                 output[6:0] HEX2, output[6:0] HEX1, output[6:0] HEX0);
 						
-// The code describing your datapath will go here.  Your datapath 
-// will hierarchically instantiate six card7seg blocks, two scorehand
-// blocks, and a dealcard block.  The registers may either be instatiated
-// or included as sequential always blocks directly in this file.
-//
-// Follow the block diagram in the Lab 1 handout closely as you write this code.
+
 	
 	wire [3:0] new_card, p_card1, p_card2, p_card3, d_card1, d_card2, d_card3;
 	
